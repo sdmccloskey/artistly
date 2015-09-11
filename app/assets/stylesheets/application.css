@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+p {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+}
