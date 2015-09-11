@@ -1,7 +1,7 @@
 class CreateArtworks < ActiveRecord::Migration
   def change
     create_table :artworks do |t|
-      t.image :art
+      t.string :art
       t.string :title
       t.string :artist
       t.float :price

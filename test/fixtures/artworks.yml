@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  art: 
+  art: MyString
   title: MyString
   artist: MyString
   price: 1.5
@@ -9,7 +9,7 @@ one:
   description: MyText
 
 two:
-  art: 
+  art: MyString
   title: MyString
   artist: MyString
   price: 1.5
