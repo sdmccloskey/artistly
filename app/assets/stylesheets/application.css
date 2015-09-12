@@ -28,3 +28,7 @@ h2 {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 }
+
+h2 .caro-text {
+	text-shadow: 2px 2px 4px #000000;
+}
