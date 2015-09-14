@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sellers
   get 'welcome/index'
 
   get 'welcome/about'
