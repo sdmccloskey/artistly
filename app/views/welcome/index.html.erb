@@ -6,13 +6,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Artistly | Your Store, Your Love, Your Art</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="modern-business.css" rel="stylesheet">
+
+<!--     <link href="css/modern-business.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,6 +33,13 @@
     <!-- Navigation -->
 
 
+
+
+
+
+
+
+
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -43,21 +52,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="img-responsive fill" width="100%"><%= image_tag("welcomePage/potteryPieces.jpg") %></div>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h2 class="caro-text">Find works, Sell works, Love works!</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="img-responsive fill" width="100%"><%= image_tag("welcomePage/sunflower-florin-coman.jpg") %></div>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    <h2 class="caro-text">See how other artists around you are enjoying the world too!</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="img-responsive fill" width="100%"><%= image_tag("welcomePage/artPainter.png") %></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2 class="caro-text">Enjoy! Even if your passion is painting, drawing, photographing, or pottery!</h2>
                 </div>
             </div>
         </div>
@@ -71,7 +80,20 @@
         </a>
     </header>
 
-    <center><h1 class="page-header">Artistly, Bringing you a new edge to shop and sell</h1></center>
+    <div class="logo-page"><%= image_tag("logo_png_color_100px.png")%></div>
+    <center>
+        <h1 class="page-header">Bringing you a new edge to shop and sell anywhere, anyplace, anytime.</h1><br>
+    </center>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Page Content -->
     <div class="container">
@@ -82,7 +104,11 @@
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
+
                 <h2 class="page-header">Featured listings for Artists!</h2>
+
+                <h2 class="page-header">Featured listings for <%= Time.now.strftime("%B %e, %Y") %></h2>
+
             </div>
             <div class="col-md-4 col-sm-6">
                 <a href="portfolio-item.html">
@@ -158,22 +184,26 @@
         <hr>
 
         <!-- Footer -->
+    
         <footer>
+        <div class="well">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                <div class="col-md-12">
+                    <p>Copyright &copy; <strong>Team BADS</strong> and <strong>Tech Talent South</strong> 2015</p>
                 </div>
             </div>
+        </div>
         </footer>
+    </div>
 
     </div>
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="javascripts/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>
@@ -196,47 +226,3 @@
 
 
 
-<!-- OLD ASSETS, COPIED AND COMMENTED OUT JUST FOR NOW -->
-
-
-<!--         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Artistly, Bringing you a new edge to shop and sell
-                </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row --> -->
