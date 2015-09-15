@@ -1,7 +1,7 @@
 class SellersController < ApplicationController
   before_action :set_seller, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_seller!
-
+ 
   # GET /sellers
   # GET /sellers.json
   def index

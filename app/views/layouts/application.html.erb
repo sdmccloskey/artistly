@@ -23,6 +23,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                            <% if seller_signed_in? %>
+                                <li>
+                                <%= link_to('Logout',  destroy_seller_session_path, method: :delete) %>        
+                                 </li>
+                            <% else %>
+                                <li>
+                                <%= link_to('Login', new_seller_session_path)  %>  
+                                </li>
+                            <% end %>
                     <li>
                         <a href="about.html">About</a>
                     </li>

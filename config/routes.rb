@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :sellers
+  devise_for :sellers, path: 'sellers/index'
   resources :sellers
+  
+  
+
   get 'welcome/index'
 
   get 'welcome/about'
