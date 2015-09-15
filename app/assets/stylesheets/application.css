@@ -48,3 +48,31 @@ footer .well {
 footer .row  {
 	height: 15px;
 }
+
+.logo-page {
+	margin: 20px 0 auto;
+	padding: 15px;
+	text-align: center;
+}
+
+
+.fill {
+width: 100%;
+
+    margin: 0 auto;
+}
+
+.artwork_title {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#new_artwork {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.well {
+    margin-bottom: -20px;
+}
