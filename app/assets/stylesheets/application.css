@@ -31,22 +31,11 @@ h2 {
 
 h2 .caro-text {
 	text-shadow: 2px 2px 4px #000000;
+	margin-bottom: 5%;
 }
 
 .page-header {
 	  text-align: center;
-}
-
-footer {
-	margin: 0px 0;
-}
-
-footer .well {
-	margin-bottom: -20px;
-}
-
-footer .row  {
-	height: 15px;
 }
 
 .logo-page {
@@ -73,6 +62,18 @@ width: 100%;
 	margin-right: auto;
 }
 
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  margin: 0px 0;
+
+}
+
 .well {
-    margin-bottom: -20px;
+	margin-bottom: -20px; 
 }
