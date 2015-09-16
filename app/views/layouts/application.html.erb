@@ -56,16 +56,20 @@
                 <ul class="nav navbar-nav navbar-right">
                             <% if seller_signed_in? %>
                                 <li>
-                                <%= link_to('Logout',  destroy_seller_session_path, method: :delete) %>        
+                                    <%= link_to "View Artwork",artworks_path %>
+                                </li>
+                                <li>
+                                    <%= link_to('Logout',  destroy_seller_session_path, method: :delete) %>        
                                  </li>
                             <% else %>
                                 <li>
-                                <%= link_to('Login/SignUp', new_seller_session_path)  %>  
+                                <%= link_to('Login/SignUp to View Artwork', new_seller_session_path)  %>  
                                 </li>
                             <% end %>
                     <li>
                         <%= link_to "About", welcome_about_path %>
                     </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
