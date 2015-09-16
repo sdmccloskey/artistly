@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,9 @@
     <meta name="author" content="">
     
 <!--   <title>Artistly</title> -->
+=======
+  <title>Artistly</title>
+>>>>>>> master
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -61,13 +65,9 @@
                                  </li>
                             <% else %>
                                 <li>
-                                <%= link_to('Login', new_seller_session_path)  %>  
+                                <%= link_to('Login/SignUp', new_seller_session_path)  %>  
                                 </li>
                             <% end %>
-                   
-                    <li>
-                        <%= link_to "Sign Up", new_seller_registration_path %>
-                    </li>
                     <li>
                         <%= link_to "About", welcome_about_path %>
                     </li>

@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-
     image-rendering: optimizeSpeed;
 }
 
@@ -26,7 +25,7 @@
 #about_p {
 	text-align: center;
 	margin-top: 50px;
-	margin-bottom: 105px;
+	margin-bottom: 110px;
 	font-style: Monospace;
 	font-size: 35px;
 }
