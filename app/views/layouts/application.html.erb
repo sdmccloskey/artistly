@@ -54,7 +54,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                            <% if seller_signed_in? %>
+                        <li>
+                            <%= link_to "About Us", welcome_about_path %>
+                        </li>    
+                            
+                        <% if seller_signed_in? %>
                                 <li>
                                     <%= link_to "View Artwork",artworks_path %>
                                 </li>
@@ -65,10 +69,9 @@
                                 <li>
                                 <%= link_to('Login/SignUp to View Artwork', new_seller_session_path)  %>  
                                 </li>
-                            <% end %>
-                    <li>
-                        <%= link_to "About", welcome_about_path %>
-                    </li>
+                                
+                        <% end %>
+                    
 
                 </ul>
             </div>
