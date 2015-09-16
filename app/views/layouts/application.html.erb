@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
 <!--   <title>Artistly</title> -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+
+
+<!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="modern-business.css" rel="stylesheet">
+
+<!--     <link href="css/modern-business.css" rel="stylesheet"> -->
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
 <link href='https://fonts.googleapis.com/css?family=Muli|Nunito:400,700' rel='stylesheet' type='text/css'>
+
+
+
+
 
 </head>
 <body>
@@ -50,23 +79,17 @@
     </nav>
 
 
-<div class="container">
-</div>
-
 
 
 <%= yield %>
 
+<!-- <div class="container">
+</div> -->
 
 <footer>
-<div class="well">
-    <div class="row">
-        <div class="col-md-12">
-            <p>Copyright &copy; <strong>Team BADS</strong> and <strong>Tech Talent South</strong> 2015</p>
-        </div>
-    </div>
-</div>
+    <p class="footer-text">Copyright &copy; <strong>Team BADS</strong> and <strong>Tech Talent South</strong> 2015</p>
 </footer>
+
 
 
 </body>

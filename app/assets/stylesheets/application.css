@@ -62,20 +62,17 @@ width: 100%;
 	margin-right: auto;
 }
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-  margin: 0px 0;
-
+footer {
+	position: fixed;
+	bottom:0;
+	height: 50px;
+	background-color: #B2B2B2;
+	width: 100%;
+	text-align: center;
 }
 
-.well {
-	margin-bottom: -20px; 
+.footer-text {
+	margin-top: 15px;
 }
 
 td {
