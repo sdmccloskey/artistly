@@ -1,15 +1,22 @@
 class SellersController < ApplicationController
   before_action :set_seller, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_seller!, :seller_signed_in?, :current_seller, :seller_session
 
+
+  
   # GET /sellers
   # GET /sellers.json
   def index
-    @sellers = Seller.all
+    seller = current_seller
+    redirect_to seller
+
   end
 
   # GET /sellers/1
   # GET /sellers/1.json
   def show
+    @artworks = Artwork.where(seller_id: @seller.id)
+    
   end
 
   # GET /sellers/new
