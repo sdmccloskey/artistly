@@ -10,7 +10,7 @@
   <% end %>
 </p> -->
 
-<%= link_to 'Add Artwork', new_artwork_path %>
+
 
 <p>
   <strong>Picture:</strong>
@@ -22,8 +22,8 @@
   <%= @seller.about %>
 </p>
 
-<%= link_to 'Edit', edit_seller_path(@seller) %> |
-<%= link_to 'Back', sellers_path %>
+<%= link_to 'Edit', edit_seller_path(@seller) %> 
+      <!--  <%= link_to 'Back', sellers_path %> -->
 
 
 <table>
@@ -55,3 +55,5 @@
     <% end %>
   </tbody>
 </table>
+
+<%= link_to 'Add Artwork', new_artwork_path %>
