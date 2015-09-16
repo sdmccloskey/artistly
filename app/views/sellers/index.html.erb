@@ -2,7 +2,8 @@
 
 <h1>Listing Sellers</h1>
 
-<table>
+<div class="container">
+  <table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -25,7 +26,10 @@
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
+<%= link_to 'New Seller', new_seller_path %>
 
+<hr>
 

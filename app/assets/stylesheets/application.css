@@ -31,20 +31,51 @@ h2 {
 
 h2 .caro-text {
 	text-shadow: 2px 2px 4px #000000;
+	margin-bottom: 5%;
 }
 
 .page-header {
 	  text-align: center;
 }
 
+.logo-page {
+	margin: 20px 0 auto;
+	padding: 15px;
+	text-align: center;
+}
+
+
+.fill {
+width: 100%;
+
+    margin: 0 auto;
+}
+
+.artwork_title {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#new_artwork {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 footer {
-	margin: 0px 0;
+	position: fixed;
+	bottom:0;
+	height: 50px;
+	background-color: #B2B2B2;
+	width: 100%;
+	text-align: center;
 }
 
-footer .well {
-	margin-bottom: -20px;
+.footer-text {
+	margin-top: 15px;
 }
 
-footer .row  {
-	height: 15px;
+td {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
 }
