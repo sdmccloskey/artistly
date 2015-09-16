@@ -7,12 +7,16 @@ class SellersController < ApplicationController
   # GET /sellers
   # GET /sellers.json
   def index
-    @sellers = Seller.all
+    seller = current_seller
+    redirect_to seller
+
   end
 
   # GET /sellers/1
   # GET /sellers/1.json
   def show
+    @artworks = Artwork.where(seller_id: @seller.id)
+    
   end
 
   # GET /sellers/new
