@@ -18,6 +18,9 @@
   <div class="field">
     <%= f.label :picture %><br>
     <%= f.text_field :picture %>
+    <%= form_for @seller, url: sellers_path, html: { multipart: true } do |form| %>
+   <%= form.file_field :avatar %>
+<% end %>
   </div>
   <div class="field">
     <%= f.label :about %><br>
