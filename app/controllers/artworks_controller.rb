@@ -5,16 +5,20 @@ class ArtworksController < ApplicationController
   # GET /artworks.json
   def index
     @artworks = Artwork.all
+    
   end
 
   # GET /artworks/1
   # GET /artworks/1.json
   def show
+    seller = current_seller
+    redirect_to seller
   end
 
   # GET /artworks/new
   def new
     @artwork = Artwork.new
+
   end
 
   # GET /artworks/1/edit
