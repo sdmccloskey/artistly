@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
-<!--   <title>Artistly</title> -->
-=======
-  <title>Artistly</title>
->>>>>>> master
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -59,18 +54,25 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                            <% if seller_signed_in? %>
+                        <li>
+                            <%= link_to "About Us", welcome_about_path %>
+                        </li>    
+                            
+                        <% if seller_signed_in? %>
                                 <li>
-                                <%= link_to('Logout',  destroy_seller_session_path, method: :delete) %>        
+                                    <%= link_to "View Artwork",artworks_path %>
+                                </li>
+                                <li>
+                                    <%= link_to('Logout',  destroy_seller_session_path, method: :delete) %>        
                                  </li>
                             <% else %>
                                 <li>
-                                <%= link_to('Login/SignUp', new_seller_session_path)  %>  
+                                <%= link_to('Login/SignUp to View Artwork', new_seller_session_path)  %>  
                                 </li>
-                            <% end %>
-                    <li>
-                        <%= link_to "About", welcome_about_path %>
-                    </li>
+                                
+                        <% end %>
+                    
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

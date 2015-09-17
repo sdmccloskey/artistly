@@ -29,8 +29,8 @@ h2 {
 	font-weight: 400;
 }
 
-h2 .caro-text {
-	text-shadow: 2px 2px 4px #000000;
+.caro-text {
+	text-shadow: 2px 2px 6px #000000;
 	margin-bottom: 5%;
 }
 
@@ -78,4 +78,16 @@ footer {
 td {
 	font-family: 'Muli', sans-serif;
 	font-weight: 400;
+}
+
+.imageBox {
+	margin-bottom: 35px;
+	text-align: center;
+
+}
+
+.login {
+
+	margin: 0 auto;
+	width: 400px;
 }
